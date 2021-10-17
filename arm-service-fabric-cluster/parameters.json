@@ -1,0 +1,78 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "clusterName": {
+            "value": "#{clusterName}#"
+        },
+        "clusterLocation": {
+            "value": "#{clusterLocation}#"
+        },
+        "computeLocation": {
+            "value": "#{computeLocation}#"
+        },
+        "adminUserName": {
+            "value": "#{adminUserName}#"
+        },
+        "adminPassword": {
+            "value": "#{adminPassword}#"
+        },
+        "nicName": {
+            "value": "#{nicName}#"
+        },
+        "publicIPAddressName": {
+            "value": "#{publicIPAddressName}#"
+        },
+        "dnsName": {
+            "value": "#{dnsName}#"
+        },
+        "virtualNetworkName": {
+            "value": "#{virtualNetworkName}#"
+        },
+        "lbName": {
+            "value": "#{lbName}#"
+        },
+        "lbIPName": {
+            "value": "#{lbIPName}#"
+        },
+        "applicationDiagnosticsStorageAccountName": {
+            "value": "#{applicationDiagnosticsStorageAccountName}#"
+        },
+        "supportLogStorageAccountName": {
+            "value": "#{supportLogStorageAccountName}#"
+        },
+        "sourceVaultValue": {
+            "value": "/subscriptions/#{subscriptionId}#/resourceGroups/#{rgName}#/providers/Microsoft.KeyVault/vaults/#{sourceKeyvaultName}#"
+        },
+        "certificateUrlValue": {
+            "value": "#{sourceCertSecretUrl}#"
+        },
+        "certificateThumbprint": {
+            "value": "#{sourceCertThumbprint}#"
+        },
+        "vmImageSku": {
+            "value": "#{vmImageSku}#"
+        },
+        "vmImageOffer": {
+            "value": "#{vmImageOffer}#"
+        },
+        "nt0ephemeralStartPort": {
+            "value": 49152
+        },
+        "nt0ephemeralEndPort": {
+            "value": 65534
+        },
+        "nt0applicationStartPort": {
+            "value": 20000
+        },
+        "nt0applicationEndPort": {
+            "value": 30000
+        },
+        "nt0fabricTcpGatewayPort": {
+            "value": 19000
+        },
+        "nt0fabricHttpGatewayPort": {
+            "value": 19080
+        }
+    }
+}
